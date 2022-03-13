@@ -80,6 +80,11 @@
        @include avatars-text;
     }
 
+    section .avatar1 .foto{
+            background: $cutomer-1;
+            @include avatars();
+            
+    }
     section .avatar2 .foto{
             background: $cutomer-2;
             @include avatars();
