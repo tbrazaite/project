@@ -1,0 +1,323 @@
+.tabs{
+    background: grey;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 595px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: $tabs-bg;
+    background-position: bottom;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+
+        &:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $tabs-bg-gradient-color;
+            opacity: 0.42;
+    }
+
+    .container-box {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: -10px;
+        margin-left: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        background: $tabs-color;
+        box-shadow: 0px 3px 6px #00000029;
+        transition: 0.3s;
+        border: none;
+    }
+
+
+    .rotate {
+        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+        opacity: 0.5;
+        color: $white-text-color;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        font-weight: 600;
+    }
+
+    .box:hover{
+        cursor: pointer;
+        background-color: $main-color;
+        opacity: 1;
+
+        .rotate{
+            opacity: 1;
+            transform: rotate(-1turn);
+        }
+    }
+
+    .box.active2 {
+            background-color: $main-color;
+
+            .rotate{
+                opacity: 1;
+                transform: rotate(-1turn);
+            }
+        }
+
+
+
+    .tabs-text{
+        width: 40%;
+        min-height: 100px;
+        height: auto;
+        padding-left: 50px;
+        text-align: left;
+        position: relative;
+        opacity: 1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+
+        #tab1, #tab2, #tab3 {
+            opacity: 1;
+            transition: 3s;
+            transform: rotateY(360deg);
+        }
+ 
+    }
+
+   .tabAnimation{  
+       h1, p{
+        transition: 1s;
+         transform: rotateY(360deg);
+       }
+    }
+    
+
+
+    h1 {
+        font-size: 36px;
+        text-align: left;
+        color: $white-text-color;
+        opacity: 1;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        list-style: 20px;
+        padding-top: 35px;
+        color: $white-text-color;
+        opacity: 1;
+    }
+
+
+    .container-box-2{
+        width: 40%;
+        height: auto;
+        padding-left: 50px;
+        position: relative;
+    }
+
+    .box-small{
+        display: flex;
+    }
+
+   .box-2-1 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        height: 168px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        font-weight: 600;
+        position: relative;
+        opacity: 1;
+
+        background: url(/resources/photo-1493409137604-0901c55e4456.png);
+        background-color: white;
+        background-size: 100%; 
+        box-shadow: 0px 3px 6px #00000029;
+        
+
+         &:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $main-color 0% 0% no-repeat padding-box;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    
+
+    .box-2-1:hover::before{
+            opacity: 0.8;
+        }
+
+    .box-2-1 span{
+        z-index: 1;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        opacity: 0;
+        height: 168px;
+        width: 168px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+     .box-2-1 span:hover{
+        opacity: 1;
+        cursor: url(/resources/description-cursor-icon-with-shadow-32.png), auto;
+    }
+
+.box-2-2 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        height: 168px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        font-weight: 600;
+        position: relative;
+        opacity: 1;
+        margin-left: 24px;
+
+        background: url(/resources/photo-1543364195-bfe6e4932397.png);
+        background-color: white;
+        background-size: 100%; 
+        box-shadow: 0px 3px 6px #00000029;
+        
+
+         &:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $main-color 0% 0% no-repeat padding-box;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    
+
+    .box-2-2:hover::before{
+            opacity: 0.8;
+        }
+
+    .box-2-2 span{
+        z-index: 1;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        opacity: 0;
+        height: 168px;
+        width: 168px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+     .box-2-2 span:hover{
+        opacity: 1;
+        cursor: url(/resources/description-cursor-icon-with-shadow-32.png), auto;
+    }
+
+    .box-2-3 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 177px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        font-weight: 600;
+        position: relative;
+        opacity: 1;
+        margin-top: 24px;
+
+        background: url(/resources/photo-1448387473223-5c37445527e7.png);
+        background-color: white;
+        background-size: 100%; 
+        box-shadow: 0px 3px 6px #00000029;
+        
+
+         &:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $main-color 0% 0% no-repeat padding-box;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    
+
+    .box-2-3:hover::before{
+            opacity: 0.8;
+        }
+
+    .box-2-3 span{
+        z-index: 1;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        opacity: 0;
+        height: 168px;
+        width: 360px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+     .box-2-3 span:hover{
+        opacity: 1;
+        cursor: url(/resources/description-cursor-icon-with-shadow-32.png), auto;
+    }
+
+
+    
+
+}
+
+
+
+
+
+
+
+ 

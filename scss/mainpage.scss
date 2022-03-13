@@ -1,0 +1,285 @@
+.mainpage{
+    background: $mainpage-bg;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 639px;
+    height: auto;
+    display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    position: relative;
+    padding-top: 72px;
+    margin: 0 auto;
+     overflow: hidden;
+     
+    
+
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $mainpage-bg-gradient-color;
+    opacity: 0.63;
+  }
+
+    
+     .divider{
+        background-color: $white-text-color;
+        width: 70px;
+        height: 2px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .left{
+        width:auto;
+        max-width: 700px;
+        min-height: 480px;
+        height: auto;
+        text-align: left;
+        padding-right: 35px;
+        padding-left: 35px;
+        box-sizing: border-box;
+        z-index: 1;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+         
+        img{
+            width: 100%;
+            max-width: 250px;
+        }
+
+        h2{
+            width: 100%;
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 600;
+            margin-top: 25px;
+            color: $white-text-color;
+            
+           
+        }
+
+        p{
+            width: 100%;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 23px;
+            opacity: 0.8;
+            color: $white-text-color;
+            padding-right: 50px;
+        }
+
+        button{
+            background: transparent;
+            border: 2px solid $white-text-color;
+            color: $white-text-color;
+            width: 135px;
+            height: 42px;
+            margin-top: 45px;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            &:hover{
+                cursor: pointer;
+                // transform: translatex(5px);
+                // transition: 0.3s;
+                }
+        } 
+    }
+
+    .right{
+        width:auto;
+        max-width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding-right: 35px;  
+        padding-left: 70px;  
+        min-height: 425px;
+        height: auto;
+         z-index: 1;
+    
+
+        .form{
+            background: transparent;
+            min-width: 360px;
+            color: black;
+            box-shadow: 0px 5px 6px #00000029;
+            opacity: 1;
+            height: 425px;
+        }
+
+        .form-anotation{
+            line-height: 60px;
+            background-color: #F5F5F5;
+            border-radius: 5px 5px 0px 0px;
+            height: 60px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: 600;
+
+            span{
+                text-transform: uppercase;
+                color: $main-color;
+            }
+        }
+
+        .form-1 {
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            background: #FFFFFF; 
+
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                text-align: left;
+                padding-left: 50px;
+                padding-top: 30px;
+                color: #1C1C1C;
+            }
+        }
+
+        .form-1 input{
+            margin-top: 15px;
+            width: 260px; 
+            height: 19px;  
+            border: none;
+            border-bottom: 1px solid #acacac;
+            box-sizing: border-box;
+            padding-left: 8px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+        }
+            ::placeholder {
+                color: #acacac;
+                font-size: 12px;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+        .form-2{
+            width: 100%;
+            height: 105px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+           
+
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                text-align: left;
+                padding-left: 50px;
+                padding-top: 20px;
+                color: #1C1C1C;
+            }
+        }
+
+        .form-2-inputs{
+            display: flex;
+            padding-top: 10px;
+            padding-left: 45px;
+
+            .radio-item1 {
+            position: relative;
+            padding: 0 5px;           
+        }
+
+        .radio-item1 input[type='radio'] {
+                display: none;   
+        }
+
+        .radio-item1 label {
+                font-size: 9px;
+                letter-spacing: 0px;
+                color: #000000;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                font-weight: normal;
+        }
+
+        .radio-item1 label:before {
+                content: " ";
+                display: inline-block;
+                position: relative;
+                margin: 0 5px 0 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 11px;
+                border: 1px solid $green-color;
+                opacity: 0.5;
+                
+        }
+
+        .radio-item1 input:checked + label:after {
+                border-radius: 11px;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                top: 2px;
+                left: 7px;
+                content: " ";
+                display: block;
+                background: $green-color;
+                opacity: 1;
+                font-weight: 600;
+        }
+
+        .radio-item1 input:checked + label:before {
+                content: " ";
+                display: inline-block;
+                position: relative;
+                margin: 0 5px 0 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 11px;
+                border: 1px solid $green-color;
+                opacity: 1;
+        }
+
+        .radio-item1 input:checked + label{
+            font-weight: 600;
+        }
+
+        }
+
+        
+
+        .main-button{
+            background-color: $green-color;
+            border: none;
+            border-radius: 0px 0px 5px 5px;
+            color: #FFFFFF;
+            width: 100%;
+            height: 60px;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="app/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Galutinis atsiskaitymas</title>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <header>
+    <nav class="main-nav">
+
+      <div class="nav-container">
+        <div class="navfoto">
+          <a class="link navfotolink" href="#" , target="_blank">
+            <img src="/resources/cheshire-county-hygiene-services.svg" alt="">
+          </a>
+
+        </div>
+
+        <div class="links">
+          <a class="link" id="nav1" href="#features">Features</a>
+          <a class="link" id="nav2" href="#about">About</a>
+          <a class="link" id="nav3" href="#pricing">Pricing</a>
+          <a class="link" id="nav4" href="#reviews">Reviews</a>
+          <a class="link" id="nav5" href="#contacts">Contact</a>
+        </div>
+
+        <div id="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <article class="mainpage">
+    <div class="left">
+      <img src="/resources/cheshire-county-hygiene-services.svg" alt="">
+      <h2>Explained propriety <br> of out perpetual to you</h2>
+      <div class="divider"></div>
+      <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor.
+        Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated
+        astonished it.</p>
+      <button type="submit" onclick="window.open('file.doc'), one()">Download</button>
+    </div>
+
+    <div class="right">
+      <div class="form">
+        <div class="form-anotation">
+          <p>Try Your <span>Free</span> Trial Today</p>
+        </div>
+
+        <div class="form-1">
+          <p>Your Details</p>
+          <input type="text" id="name1" name="name" placeholder="First name" required><br><br>
+
+          <input type="text" id="lname1" name="lname" placeholder="Last name" required><br><br>
+
+          <input id="number1" type="number" name="number" placeholder="Phone number" required><br><br>
+
+
+        </div>
+        <div class="form-2">
+          <p>Type of subscription</p>
+          <div class="form-2-inputs">
+            <div class="radio-item1">
+              <input type="radio" id="type1" name="type" value="monthly" required>
+              <label for="type1">Monthly</label>
+            </div>
+            <div class="radio-item1">
+              <input type="radio" id="type2" name="type" value="yearly" checked required>
+              <label for="type2">Yearly</label>
+            </div>
+          </div>
+
+        </div>
+        <button id="getstarted" class="main-button">Get started</button>
+      </div>
+
+
+    </div>
+
+  </article>
+
+  <article class="social">
+    <div class="social1">
+
+      <div class="text">
+        <h3>Social Media</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod bibendum laoreet.</p>
+      </div>
+
+      <div class="sc">
+        <a href="https://www.facebook.com/" , target="_blank"><img class="fb" src="/resources/facebook-logo.svg"
+            alt="fb"></a>
+        <a href="https://www.instagram.com/" , target="_blank"><img class="fb" src="/resources/instagram-logo.svg"
+            alt="ig"></a>
+        <a href="https://twitter.com/home" , target="_blank"><img class="fb" src="/resources/twitter.svg" alt="tw"></a>
+        <a href="https://www.pinterest.com/" , target="_blank"><img class="fb" src="/resources/pinterest.svg"
+            alt="pin"></a>
+        <a class="wifi" href="#" , target="_blank"><i class="fa-solid fa-rss"></i></a>
+      </div>
+
+    </div>
+  </article>
+
+  <article class="tabs" id="features">
+    <div class="container-box">
+      <div class="tab">
+        <button class="box active2" onclick="openText(event, 'tab1')">
+          <div class="rotate">Register</div>
+        </button>
+        <button class="box" onclick="openText(event, 'tab2')">
+          <div class="rotate">Apply</div>
+        </button>
+        <button class="box" onclick="openText(event, 'tab3')">
+          <div class="rotate">Receive</div>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="tabs-text">
+      <div id="tab1" class="tabcontent">
+        <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor
+          sit amet
+          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+          dis
+          parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+          laoreet.</p>
+      </div>
+
+      <div id="tab2" class="tabcontent" style="display:none">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. <br><br>Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Consequuntur odit cupiditate repellendus ipsum autem aspernatur minus
+          fugiat quaerat temporibus. Facere eum repellat soluta deserunt aut accusantium, adipisci veritatis sapiente
+          eveniet? </p>
+      </div>
+
+      <div id="tab3" class="tabcontent" style="display:none">
+        <h1>Aenean euismod bibendum laoreet.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Consequuntur odit cupiditate repellendus ipsum autem aspernatur minus
+          fugiat quaerat temporibus. Facere eum repellat soluta deserunt aut accusantium, adipisci veritatis sapiente
+          eveniet? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus sequi laborum ratione
+          itaque commodi molestiae autem corrupti magni est ea debitis voluptas reiciendis iure consequatur nostrum,
+          repudiandae totam et.</p>
+      </div>
+    </div>
+
+    <div class="container-box-2">
+      <div class="box-small">
+        <div class="box-2-1"><span>Explore</span></div>
+        <div class="box-2-2"><span>Explore</span></div>
+      </div>
+      <div class="box-2-3"><span>Explore</span></div>
+    </div>
+
+
+  </article>
+
+  <article class="black" id="about">
+    <div class="foto">
+      <img src="/resources/cheshire-county-hygiene-services.svg" alt="">
+    </div>
+
+    <div class="text">
+      <h2>Erat tempor tempus erat malesuada</h2>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod bibendum laoreet. Proin gravida dolor
+        sit amet lacus accumsan et viverra justo commodo.</p>
+
+      <div class="second">
+        <div class="text1">
+          <div class="eye">
+            <i class="fa-regular fa-eye"></i>
+          </div>
+          <p><b>Title</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod bibendum laoreet. </p>
+        </div>
+
+        <div class="text2">
+          <div class="chat">
+            <i class="fa-regular fa-comment"></i>
+          </div>
+          <p><b>Title</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+            dolor sit amet
+            lacus accumsan et viverra justo commodo.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </article>
+
+  <article class="icons">
+    <h2>Why this is awesome</h2>
+    <div class="divider"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <div class="main">
+      <div class="icon-1">
+        <i class="fas fa-award"></i>
+        <h3>Thoughtful Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod ibendum laoreet.</p>
+      </div>
+      <div class="icon-2">
+        <i class="fas fa-spa"></i>
+        <h3>Well Crafted</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod bibendum.</p>
+      </div>
+      <div class="icon-3">
+        <i class="fab fa-cc-visa"></i>
+        <h3>Easy to Customize</h3>
+        <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+      </div>
+
+    </div>
+
+  </article>
+
+  <article class="price-options" id="pricing">
+    <h2>What our customers are saying</h2>
+    <div class="divider"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="prising">
+
+      <div class="basic">
+        <div class="info">
+          <h3>Basic</h3>
+          <div class="cost">
+            <p><span>$</span>0</p>
+          </div>
+          <div class="text">
+            <p>Free for Life</p>
+          </div>
+        </div>
+
+
+        <div class="list">
+          <li class="hovering">Our most basic</li>
+          <li>1 GB of space</li>
+          <li>10 GB of bandwidth</li>
+          <li>3 websites</li>
+          <li>Basic customization</li>
+          <li>Wordpress integration</li>
+          <li>Email support</li>
+        </div>
+
+      </div>
+      <div class="professional">
+        <div class="info">
+          <h3>Professional</h3>
+          <div class="cost">
+            <p><span>$</span>19</p>
+          </div>
+          <div class="text">
+            <p>Monthly Payment</p>
+          </div>
+        </div>
+
+        <div class="list">
+          <li>Our most popular</li>
+          <li>5 GB of space</li>
+          <li>50 GB of bandwidth</li>
+          <li>12 websites</li>
+          <li>Advanced customization</li>
+          <li>Wordpress integration</li>
+          <li>Email support</li>
+        </div>
+
+      </div>
+      <div class="enterprise">
+        <div class="info">
+          <h3>Enterprise</h3>
+          <div class="cost">
+            <p><span>$</span>70</p>
+          </div>
+          <div class="text">
+            <p>Monthly Payment</p>
+          </div>
+        </div>
+
+        <div class="list">
+          <li class="hovering">Our most enterprise</li>
+          <li>Unlimited space</li>
+          <li>Unlimited bandwidth</li>
+          <li>100 websites</li>
+          <li>Advanced customization</li>
+          <li>Wordpress integration</li>
+          <li>24/7 customer support</li>
+        </div>
+
+      </div>
+
+    </div>
+
+  </article>
+
+  <article class="customers" id="reviews">
+    <h2>What our customers are saying</h2>
+    <div class="divider"></div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="reviews">
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar1">
+                <div class="foto">
+                  <img src="/resources/avatar_2_u231.png" alt="">
+                </div>
+
+                <div class="names">
+                  <p class="name">Jeremy H.</p>
+                  <p class="role">Manager</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.
+              </div>
+              <div class="avatar2">
+                <div class="foto">
+                </div>
+
+                <div class="names">
+                  <p class="name">John S.</p>
+                  <p class="role">Freelancer</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar3">
+                <div class="foto"></div>
+
+                <div class="names">
+                  <p class="name">Susan W.</p>
+                  <p class="role">Photographer</p>
+                </div>
+
+              </div>
+
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews">
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar4">
+                <div class="foto">
+                </div>
+
+                <div class="names">
+                  <p class="name">Tom J.</p>
+                  <p class="role">Manager</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.
+              </div>
+              <div class="avatar5">
+                <div class="foto">
+                </div>
+
+                <div class="names">
+                  <p class="name">Elen S.</p>
+                  <p class="role">Freelancer</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar6">
+                <div class="foto"></div>
+
+                <div class="names">
+                  <p class="name">Josh H.</p>
+                  <p class="role">Photographer</p>
+                </div>
+
+              </div>
+
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews">
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar7">
+                <div class="foto">
+
+                </div>
+
+                <div class="names">
+                  <p class="name">Joshua M.</p>
+                  <p class="role">Manager</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.
+              </div>
+              <div class="avatar8">
+                <div class="foto">
+                </div>
+
+                <div class="names">
+                  <p class="name">Kevin P.</p>
+                  <p class="role">Freelancer</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar9">
+                <div class="foto"></div>
+
+                <div class="names">
+                  <p class="name">Jim. K</p>
+                  <p class="role">Photographer</p>
+                </div>
+
+              </div>
+
+            </section>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews">
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar10">
+                <div class="foto">
+                </div>
+
+                <div class="names">
+                  <p class="name">Ana S.</p>
+                  <p class="role">Manager</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.
+              </div>
+              <div class="avatar11">
+                <div class="foto">
+                </div>
+
+                <div class="names">
+                  <p class="name">Susan K.</p>
+                  <p class="role">Freelancer</p>
+                </div>
+
+              </div>
+            </section>
+            <section>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                repellt
+                similique odio aspernatur ex.
+              </div>
+              <div class="avatar12">
+                <div class="foto">
+
+                </div>
+
+                <div class="names">
+                  <p class="name">Ted S.</p>
+                  <p class="role">Photographer</p>
+                </div>
+
+              </div>
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- tabs -->
+    <div class="swiper-tabs">
+      <button class="customers-button" index="0"></button>
+      <button class="active customers-button" index="1"></button>
+      <button class="customers-button" index="2"></button>
+      <button class="customers-button" index="3"></button>
+    </div>
+
+  </article>
+
+  <article class="contact-us" id="contacts">
+    <div class="content">
+
+      <h2>CONTACT US</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="form">
+        <div class="form-1">
+          <input type="text" id="name2" name="name" placeholder="First name" required><br><br>
+
+          <input type="text" id="lname2" name="lname" placeholder="Last name" required><br><br>
+
+          <input id="number2" type="number" name="number" placeholder="Phone number" required><br><br>
+
+          <div class="form-2">
+            <div class="radio-item2">
+              <input type="radio" id="type3" name="typenew" value="personal" checked required>
+              <label for="type3">Personal</label>
+            </div>
+            <div class="radio-item2">
+              <input type="radio" id="type4" name="typenew" value="company" required>
+              <label for="type4">Company</label>
+            </div>
+          </div>
+        </div>
+
+
+        <button id="cont-button" class="cont-button">Send</button>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer1">
+      <div class="ic">
+        <a href="https://www.facebook.com/" , target="_blank"><img class="fb" src="/resources/facebook-logo.svg"
+            alt="fb"></a>
+        <a href="https://www.instagram.com/" , target="_blank"><img class="fb" src="/resources/instagram-logo.svg"
+            alt="ig"></a>
+        <a href="https://twitter.com/home" , target="_blank"><img class="fb" src="/resources/twitter.svg" alt="tw"></a>
+        <a href="https://www.pinterest.com/" , target="_blank"><img class="fb" src="/resources/pinterest.svg"
+            alt="pin"></a>
+        <a class="wifi" href="#" , target="_blank"><i class="fa-solid fa-rss"></i></a>
+
+      </div>
+      <div class="text">
+        <p>© 2019 Cheshire County</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="swiper.js"></script>
+</body>
+
+</html>
